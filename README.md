@@ -1,26 +1,21 @@
-<!-- Banner animado SVG -->
+<!-- Header con GIF animado de gradiente -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/latanvillegas/latanvillegas/main/assets/banner.svg" alt="Latan Villegas Banner" width="100%">
+  <img src="https://i.imgur.com/MEqBJYl.gif" width="100%" alt="Animated Header">
 </p>
 
-<!-- Separador animado -->
+<!-- Badges principales grandes -->
 <p align="center">
-  <img src="https://media.giphy.com/media/2t9X7RoS9xrcGv9XwP/giphy.gif" width="100%" alt="Separator">
-</p>
-
-<!-- Badges principales -->
-<p align="center">
-  <img src="https://img.shields.io/badge/🤖-Android%20Developer-green?style=for-the-badge&logo=android&logoColor=white" alt="Android">
-  <img src="https://img.shields.io/badge/💙-Kotlin%20Lover-blue?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
-  <img src="https://img.shields.io/badge/💛-TypeScript%20Dev-yellow?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/🇺🇸-California,%20USA-red?style=for-the-badge" alt="USA">
+  <img src="https://img.shields.io/badge/🤖-Android%20Developer-green?style=for-the-badge&logo=android&logoColor=white&height=40" alt="Android">
+  <img src="https://img.shields.io/badge/💜-Kotlin%20Lover-blue?style=for-the-badge&logo=kotlin&logoColor=white&height=40" alt="Kotlin">
+  <img src="https://img.shields.io/badge/💙-TypeScript%20Dev-yellow?style=for-the-badge&logo=typescript&logoColor=white&height=40" alt="TypeScript">
+  <img src="https://img.shields.io/badge/🇺🇸-California,%20USA-red?style=for-the-badge&height=40" alt="USA">
 </p>
 
 <!-- Stats dinámicos -->
 <p align="center">
-  <img src="https://img.shields.io/github/followers/latanvillegas?style=for-the-badge&logo=github&color=FFD700" alt="Followers">
-  <img src="https://img.shields.io/github/stars/latanvillegas?style=for-the-badge&logo=github&color=FFD700" alt="Stars">
-  <img src="https://img.shields.io/github/repo-size/latanvillegas/latanvillegas?style=for-the-badge&color=FFD700" alt="Size">
+  <img src="https://img.shields.io/github/followers/latanvillegas?style=for-the-badge&logo=github&color=FFD700&height=30" alt="Followers">
+  <img src="https://img.shields.io/github/stars/latanvillegas?style=for-the-badge&logo=github&color=FFD700&height=30" alt="Stars">
+  <img src="https://img.shields.io/github/repo-size/latanvillegas/latanvillegas?style=for-the-badge&color=FFD700&height=30" alt="Size">
 </p>
 
 <!-- Separador animado -->
@@ -33,8 +28,12 @@
 # 👋 Hola, soy **Latan Villegas**
 
 <p align="center">
-  <strong>🤖 Android Developer & Full Stack</strong> | 🎓 Estudiante de Sistemas de Información  
-  📍 <em>California, Estados Unidos</em> | 🎵 <em>Productor musical (morac)</em>
+  <img src="https://img.shields.io/badge/🤖-Android%20Developer%20&%20Full%20Stack-0095D5?style=for-the-badge&logo=android&logoColor=white" alt="Rol">
+  <br>
+  <img src="https://img.shields.io/badge/🎓-Estudiante%20de%20Sistemas%20de%20Información-FF7F50?style=flat" alt="Estudios">
+  <br>
+  <img src="https://img.shields.io/badge/📍-California,%20Estados%20Unidos-3DDC84?style=flat" alt="Ubicación">
+  <img src="https://img.shields.io/badge/🎵-Productor%20musical%20(morac)-FF0000?style=flat" alt="Música">
 </p>
 
 <p align="center">
