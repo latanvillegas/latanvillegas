@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Android-Developer-green?logo=android&style=for-the-badge" alt="Android">
   <img src="https://img.shields.io/badge/Kotlin-Lover-blue?logo=kotlin&style=for-the-badge" alt="Kotlin">
   <img src="https://img.shields.io/badge/TypeScript-Developer-yellow?logo=typescript&style=for-the-badge" alt="TypeScript">
-  <img src="https://img.shields.io/badge/🇵🇪-Perú-red?style=for-the-badge" alt="Perú">
+  <img src="https://img.shields.io/badge/🇺🇸-USA-red?style=for-the-badge" alt="USA">
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 
 <p align="center">
   <strong>Android Developer & Full Stack</strong> | Estudiante de Sistemas de Información  
-  📍 <em>Trujillo, Perú</em> | 🎵 <em>Productor musical (morac)</em>
+  📍 <em>California, Estados Unidos</em> | 🎵 <em>Productor musical (morac)</em>
 </p>
 
 <p align="center">
@@ -33,7 +33,7 @@
 |---|---|
 | 💼 | **Rol**: Android Developer & Full Stack |
 | 🎓 | **Estudios**: Sistemas de Información |
-| 📍 | **Ubicación**: Trujillo, La Libertad, Perú |
+| 📍 | **Ubicación**: California, Estados Unidos |
 | 🎵 | **Música**: Productor bajo el nombre **morac** |
 | 🚀 | **Focus**: Apps útiles, limpias y con propósito |
 
@@ -171,7 +171,7 @@
   <a href="https://github.com/latanvillegas">
     <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" alt="GitHub">
   </a>
-  <img src="https://img.shields.io/badge/Ubicación-Trujillo,%20Perú-007ACC?style=for-the-badge" alt="Ubicación">
+  <img src="https://img.shields.io/badge/Ubicación-California,%20EE.UU.-007ACC?style=for-the-badge" alt="Ubicación">
 </p>
 
 ---
