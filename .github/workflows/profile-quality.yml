@@ -1,0 +1,41 @@
+name: Profile quality
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - assets/**
+      - scripts/**
+      - tests/**
+      - .github/workflows/profile-quality.yml
+  pull_request:
+    paths:
+      - README.md
+      - assets/**
+      - scripts/**
+      - tests/**
+      - .github/workflows/profile-quality.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-quality-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate README and assets
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout (pinned action)
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Check profile
+        run: python3 scripts/check_profile.py
+      - name: Regression tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
