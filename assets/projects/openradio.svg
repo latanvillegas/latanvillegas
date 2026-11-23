@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="240" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">OpenRadio</title>
+  <desc id="desc">Ilustración conceptual del proyecto OpenRadio, no es una captura de pantalla.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0C2736"/><stop offset="1" stop-color="#075668"/></linearGradient></defs>
+  <rect width="640" height="240" rx="18" fill="url(#bg)"/>
+  <circle cx="570" cy="7" r="150" fill="#FFFFFF" opacity=".055"/>
+  <circle cx="590" cy="225" r="130" fill="#FFFFFF" opacity=".06"/>
+  <path d="M0 203Q160 147 320 207T640 205" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="3" fill="none"/>
+  <rect x="27" y="29" width="5" height="176" rx="2.5" fill="#FFFFFF" opacity=".65"/>
+  <text x="49" y="94" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#FFFFFF">OpenRadio</text>
+  <text x="50" y="126" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#D9E8F6">Kotlin / Media3 / Android</text>
+  <path d="M50 145H274" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
+  <g transform="translate(424 38)">
+      <rect x="0" y="34" width="149" height="143" rx="21" fill="#0B2334" stroke="#5EEAD4" stroke-opacity=".8" stroke-width="3"/>
+      <circle cx="75" cy="110" r="46" fill="#14556B" stroke="#5EEAD4" stroke-width="3"/>
+      <circle cx="75" cy="110" r="26" fill="#0B2334" stroke="#75E3D9" stroke-width="3"/>
+      <circle cx="75" cy="110" r="8" fill="#A9FFF0"/>
+      <path d="M23 18L139 5" stroke="#A9FFF0" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="125" cy="162" r="6" fill="#A9FFF0"/>
+      <path d="M-30 110Q-49 85-30 59M-49 127Q-78 87-48 43" fill="none" stroke="#5EEAD4" stroke-opacity=".7" stroke-width="5" stroke-linecap="round"/>
+    </g>
+</svg>
