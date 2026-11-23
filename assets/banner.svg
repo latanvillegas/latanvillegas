@@ -1,43 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
-  <title id="title">Latan Villegas · Software Engineering</title>
-  <desc id="desc">Portada con fondo azul nocturno, tipografía clara e ilustración de paneles de desarrollo y dispositivo móvil.</desc>
-  <defs>
-    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1325"/><stop offset=".6" stop-color="#112646"/><stop offset="1" stop-color="#152E45"/></linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5CE1E6"/><stop offset=".55" stop-color="#718DFF"/><stop offset="1" stop-color="#5FE5AC"/></linearGradient>
-    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1D3C62"/><stop offset="1" stop-color="#0D1B32"/></linearGradient>
-  </defs>
-  <rect width="1200" height="340" rx="22" fill="url(#base)"/>
-  <path d="M0 267 Q243 193 485 268 T1200 226 V340 H0Z" fill="#345A90" opacity=".13"/>
-  <circle cx="1050" cy="65" r="220" fill="#5CE1E6" opacity=".055"/>
-  <circle cx="1110" cy="320" r="210" fill="#6B83FA" opacity=".095"/>
-  <g stroke="#72A2C8" opacity=".12"><path d="M0 64H1200M0 128H1200M0 192H1200M0 256H1200"/><path d="M60 0V340M120 0V340M180 0V340M240 0V340M300 0V340M360 0V340M420 0V340M480 0V340M540 0V340M600 0V340M660 0V340M720 0V340M780 0V340M840 0V340M900 0V340M960 0V340M1020 0V340M1080 0V340M1140 0V340"/></g>
-  <rect x="64" y="66" width="7" height="206" rx="3.5" fill="url(#accent)"/>
-  <text x="95" y="111" fill="#5FE5AC" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="4">SOFTWARE ENGINEERING</text>
-  <text x="91" y="180" fill="#F2F7FF" font-family="Arial, Helvetica, sans-serif" font-size="63" font-weight="700">Latan Villegas</text>
-  <text x="95" y="221" fill="#C7D9EE" font-family="Arial, Helvetica, sans-serif" font-size="23">Android · Web · Automatización</text>
-  <text x="95" y="256" fill="#9EB8D4" font-family="Arial, Helvetica, sans-serif" font-size="17">Arquitectura mantenible / Performance / UX</text>
-  <path d="M96 281H554" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
-  <g>
-    <rect x="732" y="59" width="360" height="222" rx="18" fill="#08182B" stroke="#4D7190" stroke-opacity=".65" stroke-width="2"/>
-    <rect x="732" y="59" width="360" height="34" rx="18" fill="#203952"/>
-    <path d="M732 76V93H1092V76" fill="#203952"/>
-    <circle cx="758" cy="76" r="5" fill="#FF7890"/><circle cx="776" cy="76" r="5" fill="#FFC579"/><circle cx="794" cy="76" r="5" fill="#5FE5AC"/>
-    <text x="816" y="81" fill="#B5C9DC" font-family="monospace" font-size="12">portfolio / architecture</text>
-    <g stroke-linecap="round" stroke-width="7">
-      <path d="M762 126H840" stroke="#5CE1E6"/><path d="M860 126H1012" stroke="#536A92"/>
-      <path d="M784 151H878" stroke="#A18AFF"/><path d="M896 151H1029" stroke="#6D82A2"/>
-      <path d="M784 176H838" stroke="#5FE5AC"/><path d="M856 176H991" stroke="#536A92"/>
-      <path d="M762 201H905" stroke="#6286A6"/><path d="M922 201H1038" stroke="#5CE1E6"/>
-      <path d="M762 226H862" stroke="#A18AFF"/><path d="M880 226H971" stroke="#536A92"/>
-    </g>
-  </g>
-  <g>
-    <rect x="1021" y="139" width="114" height="176" rx="21" fill="#09182A" stroke="#71B9D4" stroke-width="2.5"/>
-    <rect x="1031" y="154" width="94" height="145" rx="11" fill="url(#screen)"/>
-    <rect x="1042" y="169" width="38" height="6" rx="3" fill="#72E0DE"/>
-    <rect x="1042" y="185" width="66" height="4" rx="2" fill="#55769A"/>
-    <circle cx="1078" cy="238" r="25" fill="#153F5E" stroke="#5FE5AC" stroke-width="2"/>
-    <path d="M1064 240L1074 230L1082 245L1093 226" stroke="#5FE5AC" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="1061" y="305" width="34" height="3" rx="1.5" fill="#7B9FB9"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Latan Villegas · Engineering Portfolio</title>
+<desc id="desc">Portada clara con gradiente, texto técnico y mockups de una ventana de código y una pantalla móvil.</desc>
+<defs>
+<linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E9F4FF"/><stop offset=".65" stop-color="#D6EAFB"/><stop offset="1" stop-color="#EDF4FF"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#087DA7"/><stop offset=".54" stop-color="#6661C3"/><stop offset="1" stop-color="#078E74"/></linearGradient>
+</defs>
+<rect width="1200" height="360" rx="24" fill="url(#background)"/>
+<g stroke="#5281AB" opacity=".12" stroke-width="1"><path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M0 300H1200"/><path d="M60 0V360M120 0V360M180 0V360M240 0V360M300 0V360M360 0V360M420 0V360M480 0V360M540 0V360M600 0V360M660 0V360M720 0V360M780 0V360M840 0V360M900 0V360M960 0V360M1020 0V360M1080 0V360M1140 0V360"/></g>
+<circle cx="1040" cy="65" r="204" fill="#77CAE6" opacity=".09"/><circle cx="1098" cy="344" r="180" fill="#6661C3" opacity=".07"/>
+<path d="M0 314Q218 262 403 321T1200 292" stroke="url(#accent)" opacity=".20" stroke-width="3" fill="none"/>
+<rect x="58" y="61" width="6" height="242" rx="3" fill="url(#accent)"/>
+<text x="87" y="104" fill="#078E74" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="17" letter-spacing="3.5">ENGINEERING  /  PORTFOLIO</text>
+<text x="82" y="180" fill="#112643" font-family="Arial,Helvetica,sans-serif" font-size="63" font-weight="700">Latan Villegas</text>
+<text x="87" y="225" fill="#395974" font-family="Arial,Helvetica,sans-serif" font-size="23">Android · Full-Stack · Automation</text>
+<path d="M87 247H520" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+<rect x="85" y="271" width="121" height="35" rx="17.5" fill="#C6EAF4" stroke="#7FA6C7" stroke-opacity=".6"/>
+<text x="145.5" y="294" fill="#078E74" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing=".6">ANDROID</text><rect x="219" y="271" width="83" height="35" rx="17.5" fill="#C6EAF4" stroke="#7FA6C7" stroke-opacity=".6"/>
+<text x="260.5" y="294" fill="#6661C3" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing=".6">WEB</text><rect x="315" y="271" width="150" height="35" rx="17.5" fill="#C6EAF4" stroke="#7FA6C7" stroke-opacity=".6"/>
+<text x="390" y="294" fill="#078E74" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing=".6">AUTOMATION</text>
+<rect x="719" y="53" width="389" height="245" rx="18" fill="#F9FCFF" stroke="#7FA6C7" stroke-width="2"/>
+<path d="M738 53H1089Q1108 53 1108 73V91H719V73Q719 53 738 53Z" fill="#D4E6F7"/>
+<circle cx="745" cy="73" r="5" fill="#E87892"/><circle cx="762" cy="73" r="5" fill="#E9C078"/><circle cx="779" cy="73" r="5" fill="#61CFA6"/>
+<text x="807" y="78" font-family="monospace" font-size="12" fill="#395974">architecture / workspace</text>
+<g fill="none" stroke-linecap="round" stroke-width="8">
+<path d="M750 119H840" stroke="#087DA7"/><path d="M859 119H1020" stroke="#86AAC3" opacity=".8"/>
+<path d="M780 149H904" stroke="#6661C3"/><path d="M924 149H1050" stroke="#86AAC3" opacity=".7"/>
+<path d="M780 179H860" stroke="#078E74"/><path d="M878 179H985" stroke="#86AAC3" opacity=".7"/>
+<path d="M750 209H897" stroke="#86AAC3" opacity=".7"/><path d="M915 209H1040" stroke="#087DA7"/>
+<path d="M780 239H894" stroke="#6661C3"/><path d="M916 239H989" stroke="#86AAC3" opacity=".6"/>
+<path d="M750 269H854" stroke="#078E74"/><path d="M873 269H993" stroke="#86AAC3" opacity=".7"/>
+</g>
+<g>
+<rect x="1022" y="147" width="125" height="180" rx="23" fill="#F9FCFF" stroke="#437BAE" stroke-width="2.7"/>
+<rect x="1033" y="160" width="103" height="151" rx="12" fill="#D6EAFB"/>
+<rect x="1054" y="169" width="55" height="5" rx="2.5" fill="#087DA7" opacity=".85"/>
+<rect x="1047" y="189" width="73" height="6" rx="3" fill="#86AAC3" opacity=".55"/>
+<rect x="1047" y="204" width="61" height="6" rx="3" fill="#86AAC3" opacity=".45"/>
+<circle cx="1085" cy="263" r="29" fill="#C6EAF4" stroke="#078E74" stroke-width="2"/>
+<path d="M1068 263L1079 250L1089 273L1102 245" stroke="#078E74" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1066" y="316" width="38" height="3" rx="1.5" fill="#437BAE" opacity=".75"/>
+</g>
 </svg>

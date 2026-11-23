@@ -12,8 +12,8 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 MARKDOWN_LINK = re.compile(r'(!?)\[([^\]]*)\]\(([^\s)]+)(?:\s+"[^"]*")?\)')
-MAX_README_BYTES = 12_288
-MAX_IMAGES = 20
+MAX_README_BYTES = 16_384
+MAX_IMAGES = 24
 MAX_EXTERNAL_BADGES = 14
 SVG_BAD_TAG = re.compile(r"<\s*(?:animate|animateTransform|animateMotion|set|script|foreignObject)\b", re.I)
 SVG_REMOTE_REF = re.compile(r"(?:href|src)\s*=\s*['\"](?:https?:|//|data:)", re.I)
@@ -21,10 +21,42 @@ SVG_EVENT = re.compile(r"\bon[a-z]+\s*=", re.I)
 SVG_CSS_REMOTE = re.compile(r"(?:@import|url\s*\(\s*['\"]?(?:https?:|//|data:))", re.I)
 
 
+
+MAX_APPROVED_SCREENSHOTS = 4
+APPROVED_IMAGE_PATHS = {
+    "Radio-Escucha": {
+        "fastlane/metadata/android/es-ES/images/phoneScreenshots/1.jpg",
+        "fastlane/metadata/android/es-ES/images/phoneScreenshots/3.jpg",
+    },
+    "futo-keyboard-themes": {
+        "docs/images/aurora-prism-hyperglass-3d-preview.jpg",
+        "docs/images/obsidian-3d-tactile-preview.jpg",
+    },
+}
+
+
+def allowed_project_image(target: str) -> bool:
+    """Admite solo capturas públicas reales con commit SHA completo y rutas conocidas."""
+    from urllib.parse import urlsplit
+
+    parts = urlsplit(target)
+    if (parts.scheme != "https" or parts.hostname != "raw.githubusercontent.com"
+            or parts.port is not None or parts.username or parts.password
+            or parts.query or parts.fragment):
+        return False
+    segments = parts.path.lstrip("/").split("/")
+    if len(segments) < 5 or segments[0] != "latanvillegas":
+        return False
+    repo, revision = segments[1:3]
+    if re.fullmatch(r"[a-f0-9]{40}", revision) is None:
+        return False
+    return "/".join(segments[3:]) in APPROVED_IMAGE_PATHS.get(repo, set())
+
 class HtmlLinks(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
         self.links: list[tuple[bool, str, str]] = []
+        self.sources: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         values = dict(attrs)
@@ -32,6 +64,8 @@ class HtmlLinks(HTMLParser):
             self.links.append((True, values.get("alt") or "", values.get("src") or ""))
         elif tag == "a":
             self.links.append((False, "", values.get("href") or ""))
+        elif tag == "source":
+            self.sources.append(values.get("srcset") or "")
 
 
 def allowed_badge(target: str) -> bool:
@@ -63,6 +97,7 @@ def validate_readme(content: str, root: Path) -> list[str]:
 
     image_count = 0
     remote_badges = 0
+    remote_screenshots = 0
     for is_image, label, target in links:
         if not target:
             errors.append("Enlace sin destino")
@@ -78,10 +113,12 @@ def validate_readme(content: str, root: Path) -> list[str]:
             if parts.scheme or parts.netloc:
                 if allowed_badge(target):
                     remote_badges += 1
+                elif allowed_project_image(target):
+                    remote_screenshots += 1
                 else:
                     errors.append(f"Imagen externa no permitida: {target}")
 
-        if parts.scheme in ("https", "mailto") and not (is_image and not allowed_badge(target)):
+        if parts.scheme in ("https", "mailto") and not (is_image and not (allowed_badge(target) or allowed_project_image(target))):
             continue
         if parts.scheme or parts.netloc:
             errors.append(f"Esquema de URL no permitido: {target}")
@@ -96,6 +133,20 @@ def validate_readme(content: str, root: Path) -> list[str]:
         if not destination.is_relative_to(root.resolve()) or not destination.is_file():
             errors.append(f"Archivo local no encontrado o fuera del repositorio: {target}")
 
+    for source in parser.sources:
+        if not source:
+            errors.append("Elemento picture/source sin srcset")
+            continue
+        parsed = urlsplit(source)
+        if parsed.scheme or parsed.netloc or "," in source or not parsed.path:
+            errors.append(f"Fuente picture externa o múltiple no permitida: {source}")
+            continue
+        path = (root / unquote(parsed.path)).resolve()
+        if not path.is_relative_to(root.resolve()) or not path.is_file():
+            errors.append(f"Fuente picture local no encontrada: {source}")
+
+    if remote_screenshots > MAX_APPROVED_SCREENSHOTS:
+        errors.append(f"Demasiadas capturas externas: {remote_screenshots} (máximo {MAX_APPROVED_SCREENSHOTS})")
     if image_count > MAX_IMAGES:
         errors.append(f"Demasiadas imágenes: {image_count} (máximo {MAX_IMAGES})")
     if remote_badges > MAX_EXTERNAL_BADGES:

@@ -1,22 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="240" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
-  <title id="title">Radio Satelital</title>
-  <desc id="desc">Ilustración conceptual del proyecto Radio Satelital, no es una captura de pantalla.</desc>
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#15204D"/><stop offset="1" stop-color="#354681"/></linearGradient></defs>
-  <rect width="640" height="240" rx="18" fill="url(#bg)"/>
-  <circle cx="570" cy="7" r="150" fill="#FFFFFF" opacity=".055"/>
-  <circle cx="590" cy="225" r="130" fill="#FFFFFF" opacity=".06"/>
-  <path d="M0 203Q160 147 320 207T640 205" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="3" fill="none"/>
-  <rect x="27" y="29" width="5" height="176" rx="2.5" fill="#FFFFFF" opacity=".65"/>
-  <text x="49" y="94" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#FFFFFF">Radio Satelital</text>
-  <text x="50" y="126" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#D9E8F6">Next.js / PWA / Streaming</text>
-  <path d="M50 145H274" stroke="#FFFFFF" stroke-opacity=".42" stroke-width="2"/>
-  <g transform="translate(470 122)">
-      <circle r="66" fill="#202B60" stroke="#A5B4FC" stroke-width="3"/>
-      <circle r="41" fill="#4057A3" opacity=".5"/>
-      <ellipse rx="111" ry="36" transform="rotate(-29)" fill="none" stroke="#90E0FC" stroke-width="4"/>
-      <circle cx="96" cy="-50" r="10" fill="#90E0FC"/>
-      <path d="M-22-20L3-37L22-17L-2 2Z" fill="#F9A8D4" opacity=".8"/>
-      <path d="M-2 3L16 30L35 19" fill="none" stroke="#F9A8D4" stroke-width="5"/>
-      <path d="M31 3Q54 0 60-24M37 18Q80 13 84-24" fill="none" stroke="#90E0FC" stroke-width="4" stroke-linecap="round"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="380" viewBox="0 0 1024 380" role="img" aria-labelledby="title desc">
+<title id="title">Radio Satelital · visual conceptual</title><desc id="desc">Ilustración premium estática de un panel de radio en vivo, con ondas y mandos de control.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101A42"/><stop offset=".6" stop-color="#202A67"/><stop offset="1" stop-color="#104B69"/></linearGradient><linearGradient id="wave" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9E8BFD"/><stop offset="1" stop-color="#5DE0E4"/></linearGradient></defs>
+<rect width="1024" height="380" rx="24" fill="url(#bg)"/>
+<circle cx="900" cy="55" r="184" fill="#A78BFA" opacity=".08"/><circle cx="66" cy="350" r="160" fill="#67E8F9" opacity=".07"/>
+<text x="55" y="93" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#8BEFDE" letter-spacing="3">LIVE / BROADCAST</text>
+<text x="52" y="156" font-family="Arial,Helvetica,sans-serif" font-size="56" font-weight="700" fill="#FFFFFF">Radio Satelital</text>
+<text x="55" y="192" font-family="Arial,Helvetica,sans-serif" font-size="21" fill="#C5D9F9">Radio en vivo · PWA · Cabina de estudio</text>
+<rect x="56" y="239" width="138" height="42" rx="21" fill="#0E435C" stroke="#5DE0E4"/>
+<circle cx="83" cy="260" r="6" fill="#5DE0E4"/><text x="101" y="266" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#BDF9FF">ON AIR</text>
+<rect x="629" y="43" width="328" height="288" rx="20" fill="#0D1838" stroke="#687DBD" stroke-width="2"/>
+<text x="652" y="80" font-family="monospace" font-size="16" fill="#A5B4FC">BROADCAST / SIGNAL</text>
+<g fill="#49D5DC">
+<rect x="658" y="164" width="15" height="55" rx="5"/><rect x="681" y="138" width="15" height="81" rx="5"/><rect x="704" y="112" width="15" height="107" rx="5"/><rect x="727" y="148" width="15" height="71" rx="5"/><rect x="750" y="126" width="15" height="93" rx="5"/><rect x="773" y="98" width="15" height="121" rx="5"/><rect x="796" y="132" width="15" height="87" rx="5"/><rect x="819" y="163" width="15" height="56" rx="5"/><rect x="842" y="117" width="15" height="102" rx="5"/><rect x="865" y="150" width="15" height="69" rx="5"/><rect x="888" y="176" width="15" height="43" rx="5"/>
+</g>
+<path d="M654 242H928" stroke="#596C97" stroke-width="2"/><rect x="652" y="261" width="124" height="36" rx="18" fill="#1A3061"/><text x="714" y="284" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#C4B5FD">STREAMING</text>
+<path d="M370 98C490 30 538 252 624 169M370 156C474 109 518 293 624 212" stroke="url(#wave)" stroke-width="5" fill="none" stroke-linecap="round" opacity=".75"/>
 </svg>
