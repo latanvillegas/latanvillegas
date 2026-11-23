@@ -6,7 +6,15 @@
   <img src="assets/banner.svg" alt="Portada premium de Latan Villegas: ingeniería de software, Android, web y automatización" width="100%">
 </picture>
 
-<h1>Hola, soy Latan Villegas</h1>
+<p><strong>Hola, soy</strong></p>
+
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/name-gradient-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/name-gradient.svg">
+    <img src="assets/name-gradient.svg" alt="Latan Villegas" width="480">
+  </picture>
+</h1>
 
 <strong>Android Developer · Full-Stack Builder · Automation</strong>
 

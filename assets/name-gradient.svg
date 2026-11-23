@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="142" viewBox="0 0 840 142" role="img" aria-labelledby="title desc">
+  <title id="title">Latan Villegas</title>
+  <desc id="desc">Nombre profesional con degradado horizontal rosa a cian, inspirado en el estilo mostrado.</desc>
+  <defs>
+    <linearGradient id="nameGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B71C65"/>
+      <stop offset="48%" stop-color="#835AC0"/>
+      <stop offset="100%" stop-color="#087E91"/>
+    </linearGradient>
+  </defs>
+  <text x="420" y="102" fill="url(#nameGradient)" font-family="Arial,Helvetica,sans-serif" font-size="91" font-weight="700" text-anchor="middle" letter-spacing="-1">Latan Villegas</text>
+  <rect x="259" y="119" width="322" height="3" rx="1.5" fill="url(#nameGradient)" opacity=".55"/>
+</svg>
