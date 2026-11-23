@@ -22,7 +22,7 @@
 
 <p align="center">
   <a href="#-proyectos-destacados">Proyectos</a> ·
-  <a href="#-stack-tecnológico">Stack</a> ·
+  <a href="#stack-tecnologico">Stack</a> ·
   <a href="#-cómo-trabajo">Enfoque</a> ·
   <a href="#-contacto">Contacto</a>
 </p>
@@ -82,28 +82,28 @@ Mis repositorios muestran trabajo práctico con streaming, interfaces multiplata
 
 <sub>Las imágenes anteriores son ilustraciones de los proyectos, no capturas de sus interfaces. Funcionalidades y versiones: consultar cada repositorio.</sub>
 
-## 🛠 Stack tecnológico
+<h2 align="center" id="stack-tecnologico">🛠 Stack tecnológico</h2>
 
-**Android / Mobile**
+<h3 align="center">Android / Mobile</h3>
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&amp;logo=kotlin&amp;logoColor=white" alt="Kotlin" />
   <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&amp;logo=android&amp;logoColor=white" alt="Android" />
   <img src="https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&amp;logo=jetpackcompose&amp;logoColor=white" alt="Jetpack Compose" />
 </p>
 
-**Web / Multiplataforma**
+<h3 align="center">Web / Multiplataforma</h3>
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&amp;logo=expo&amp;logoColor=white" alt="Expo" />
 </p>
 
-**Automatización / Tooling**
+<h3 align="center">Automatización / Tooling</h3>
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&amp;logo=githubactions&amp;logoColor=white" alt="GitHub Actions" />
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Git" />
