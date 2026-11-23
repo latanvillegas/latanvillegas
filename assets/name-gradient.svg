@@ -1,13 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="142" viewBox="0 0 840 142" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="176" viewBox="0 0 960 176" role="img" aria-labelledby="title desc">
   <title id="title">Latan Villegas</title>
-  <desc id="desc">Nombre profesional con degradado horizontal rosa a cian, inspirado en el estilo mostrado.</desc>
+  <desc id="desc">Nombre único del perfil en siete tonos luminosos: rosa, coral, dorado, verde, cian, azul y violeta. Destello decorativo opcional, con respeto a movimiento reducido.</desc>
   <defs>
-    <linearGradient id="nameGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#B71C65"/>
-      <stop offset="48%" stop-color="#835AC0"/>
-      <stop offset="100%" stop-color="#087E91"/>
+    <linearGradient id="spectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9A194F"/>
+      <stop offset="17%" stop-color="#A85112"/>
+      <stop offset="33%" stop-color="#8B6500"/>
+      <stop offset="50%" stop-color="#166B41"/>
+      <stop offset="67%" stop-color="#055D5A"/>
+      <stop offset="83%" stop-color="#3154A4"/>
+      <stop offset="100%" stop-color="#6F2D99"/>
     </linearGradient>
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="70%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="halo" x="-12%" y="-45%" width="124%" height="190%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <mask id="letterMask" maskUnits="userSpaceOnUse" x="0" y="0" width="960" height="176">
+      <rect width="960" height="176" fill="#000"/>
+      <text x="480" y="119" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="105" font-weight="800" letter-spacing="-1.8" fill="#FFF">Latan Villegas</text>
+    </mask>
   </defs>
-  <text x="420" y="102" fill="url(#nameGradient)" font-family="Arial,Helvetica,sans-serif" font-size="91" font-weight="700" text-anchor="middle" letter-spacing="-1">Latan Villegas</text>
-  <rect x="259" y="119" width="322" height="3" rx="1.5" fill="url(#nameGradient)" opacity=".55"/>
+  <style>
+    .glint {
+      opacity: 0;
+      animation: sweep 6s cubic-bezier(.3,0,.7,1) infinite;
+    }
+    @keyframes sweep {
+      0%,64% { opacity:0; transform:translateX(0px); }
+      66% { opacity:.72; transform:translateX(10px); }
+      86% { opacity:.72; transform:translateX(1270px); }
+      88%,100% { opacity:0; transform:translateX(1270px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .glint { animation:none; opacity:0; }
+    }
+  </style>
+  <text x="480" y="119" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="105" font-weight="800" letter-spacing="-1.8" fill="url(#spectrum)" opacity="0.22" filter="url(#halo)">Latan Villegas</text>
+  <text x="480" y="119" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="105" font-weight="800" letter-spacing="-1.8" fill="url(#spectrum)">Latan Villegas</text>
+  <rect class="glint" x="-240" y="19" width="210" height="137" fill="url(#sheen)" mask="url(#letterMask)"/>
+  <rect x="304" y="151" width="352" height="3" rx="1.5" fill="url(#spectrum)" opacity="0.58"/>
 </svg>
