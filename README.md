@@ -3,10 +3,10 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner.svg">
-  <img src="assets/banner.svg" alt="Portada premium de Latan Villegas: ingeniería de software, Android, web y automatización" width="100%">
+  <img src="assets/banner.svg" alt="Portada tecnológica con lema Build Ship Evolve, Android, web y automatización" width="100%">
 </picture>
 
-<p><strong>Hola, soy</strong></p>
+<p><strong>Ingeniería de software · Productos digitales</strong></p>
 
 <h1>
   <picture>
