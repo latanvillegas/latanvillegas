@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Latan Villegas · Engineering Portfolio</title>
+<desc id="desc">Portada oscura con gradiente, texto técnico y mockups de una ventana de código y una pantalla móvil.</desc>
+<defs>
+<linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081120"/><stop offset=".65" stop-color="#102A47"/><stop offset="1" stop-color="#13213B"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#52E0F4"/><stop offset=".54" stop-color="#A49DFF"/><stop offset="1" stop-color="#65F0BE"/></linearGradient>
+</defs>
+<rect width="1200" height="360" rx="24" fill="url(#background)"/>
+<g stroke="#5E80A8" opacity=".12" stroke-width="1"><path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M0 300H1200"/><path d="M60 0V360M120 0V360M180 0V360M240 0V360M300 0V360M360 0V360M420 0V360M480 0V360M540 0V360M600 0V360M660 0V360M720 0V360M780 0V360M840 0V360M900 0V360M960 0V360M1020 0V360M1080 0V360M1140 0V360"/></g>
+<circle cx="1040" cy="65" r="204" fill="#0D668E" opacity=".09"/><circle cx="1098" cy="344" r="180" fill="#A49DFF" opacity=".07"/>
+<path d="M0 314Q218 262 403 321T1200 292" stroke="url(#accent)" opacity=".20" stroke-width="3" fill="none"/>
+<rect x="58" y="61" width="6" height="242" rx="3" fill="url(#accent)"/>
+<text x="87" y="104" fill="#65F0BE" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="17" letter-spacing="3.5">ENGINEERING  /  PORTFOLIO</text>
+<text x="82" y="180" fill="#F6FAFF" font-family="Arial,Helvetica,sans-serif" font-size="63" font-weight="700">Latan Villegas</text>
+<text x="87" y="225" fill="#B5CEE4" font-family="Arial,Helvetica,sans-serif" font-size="23">Android · Full-Stack · Automation</text>
+<path d="M87 247H520" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+<rect x="85" y="271" width="121" height="35" rx="17.5" fill="#133550" stroke="#416380" stroke-opacity=".6"/>
+<text x="145.5" y="294" fill="#65F0BE" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing=".6">ANDROID</text><rect x="219" y="271" width="83" height="35" rx="17.5" fill="#133550" stroke="#416380" stroke-opacity=".6"/>
+<text x="260.5" y="294" fill="#A49DFF" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing=".6">WEB</text><rect x="315" y="271" width="150" height="35" rx="17.5" fill="#133550" stroke="#416380" stroke-opacity=".6"/>
+<text x="390" y="294" fill="#65F0BE" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing=".6">AUTOMATION</text>
+<rect x="719" y="53" width="389" height="245" rx="18" fill="#0A1D31" stroke="#416380" stroke-width="2"/>
+<path d="M738 53H1089Q1108 53 1108 73V91H719V73Q719 53 738 53Z" fill="#253B58"/>
+<circle cx="745" cy="73" r="5" fill="#E87892"/><circle cx="762" cy="73" r="5" fill="#E9C078"/><circle cx="779" cy="73" r="5" fill="#61CFA6"/>
+<text x="807" y="78" font-family="monospace" font-size="12" fill="#B5CEE4">architecture / workspace</text>
+<g fill="none" stroke-linecap="round" stroke-width="8">
+<path d="M750 119H840" stroke="#52E0F4"/><path d="M859 119H1020" stroke="#60829B" opacity=".8"/>
+<path d="M780 149H904" stroke="#A49DFF"/><path d="M924 149H1050" stroke="#60829B" opacity=".7"/>
+<path d="M780 179H860" stroke="#65F0BE"/><path d="M878 179H985" stroke="#60829B" opacity=".7"/>
+<path d="M750 209H897" stroke="#60829B" opacity=".7"/><path d="M915 209H1040" stroke="#52E0F4"/>
+<path d="M780 239H894" stroke="#A49DFF"/><path d="M916 239H989" stroke="#60829B" opacity=".6"/>
+<path d="M750 269H854" stroke="#65F0BE"/><path d="M873 269H993" stroke="#60829B" opacity=".7"/>
+</g>
+<g>
+<rect x="1022" y="147" width="125" height="180" rx="23" fill="#0A1D31" stroke="#79B8DC" stroke-width="2.7"/>
+<rect x="1033" y="160" width="103" height="151" rx="12" fill="#102A47"/>
+<rect x="1054" y="169" width="55" height="5" rx="2.5" fill="#52E0F4" opacity=".85"/>
+<rect x="1047" y="189" width="73" height="6" rx="3" fill="#60829B" opacity=".55"/>
+<rect x="1047" y="204" width="61" height="6" rx="3" fill="#60829B" opacity=".45"/>
+<circle cx="1085" cy="263" r="29" fill="#133550" stroke="#65F0BE" stroke-width="2"/>
+<path d="M1068 263L1079 250L1089 273L1102 245" stroke="#65F0BE" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1066" y="316" width="38" height="3" rx="1.5" fill="#79B8DC" opacity=".75"/>
+</g>
+</svg>

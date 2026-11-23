@@ -70,7 +70,7 @@ class ProfileValidationTests(unittest.TestCase):
         self.check_error("# Perfil\n" + badges, "Demasiados badges externos")
 
     def test_limita_tamano(self) -> None:
-        self.check_error("# Perfil\n" + "x" * 13_000, "README supera")
+        self.check_error("# Perfil\n" + "x" * 17_000, "README supera")
 
     def test_detecta_svg_animado(self) -> None:
         self.write_svg('<svg xmlns="http://www.w3.org/2000/svg"><animate attributeName="x"/></svg>')
@@ -87,6 +87,53 @@ class ProfileValidationTests(unittest.TestCase):
     def test_detecta_svg_con_eventos(self) -> None:
         self.write_svg('<svg xmlns="http://www.w3.org/2000/svg" onload="alert(1)"/>')
         self.check_error("# Perfil\n![Banner](assets/banner.svg)", "manejadores de eventos")
+
+    def test_admite_captura_real_versionada(self) -> None:
+        url = (
+            "https://raw.githubusercontent.com/latanvillegas/Radio-Escucha/"
+            + "a" * 40
+            + "/fastlane/metadata/android/es-ES/images/phoneScreenshots/1.jpg"
+        )
+        self.assertEqual(validate_readme("# Perfil\n![Pantalla](" + url + ")", self.root), [])
+
+    def test_rechaza_captura_sin_pin(self) -> None:
+        url = (
+            "https://raw.githubusercontent.com/latanvillegas/Radio-Escucha/"
+            "main/fastlane/metadata/android/es-ES/images/phoneScreenshots/1.jpg"
+        )
+        self.check_error("# Perfil\n![Pantalla](" + url + ")", "Imagen externa")
+
+    def test_rechaza_otra_ruta_raw(self) -> None:
+        url = (
+            "https://raw.githubusercontent.com/latanvillegas/Radio-Escucha/"
+            + "a" * 40 + "/malware.png"
+        )
+        self.check_error("# Perfil\n![Imagen](" + url + ")", "Imagen externa")
+
+    def test_admite_picture_local(self) -> None:
+        self.assertEqual(
+            validate_readme(
+                '<h1>Perfil</h1><picture><source media="(prefers-color-scheme: dark)" '
+                'srcset="assets/banner.svg"><img src="assets/banner.svg" '
+                'alt="Portada"></picture>',
+                self.root,
+            ),
+            [],
+        )
+
+    def test_rechaza_picture_remoto(self) -> None:
+        self.check_error(
+            '<h1>Perfil</h1><picture><source srcset="https://example.org/x.svg">'
+            '<img src="assets/banner.svg" alt="Banner"></picture>',
+            "Fuente picture externa",
+        )
+
+    def test_rechaza_picture_faltante(self) -> None:
+        self.check_error(
+            '<h1>Perfil</h1><picture><source srcset="assets/no-existe.svg">'
+            '<img src="assets/banner.svg" alt="Banner"></picture>',
+            "Fuente picture local no encontrada",
+        )
 
 
 if __name__ == "__main__":
