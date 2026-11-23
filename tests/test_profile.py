@@ -70,7 +70,7 @@ class ProfileValidationTests(unittest.TestCase):
         self.check_error("# Perfil\n" + badges, "Demasiados badges externos")
 
     def test_limita_tamano(self) -> None:
-        self.check_error("# Perfil\n" + "x" * 13_000, "README supera")
+        self.check_error("# Perfil\n" + "x" * 17_000, "README supera")
 
     def test_detecta_svg_animado(self) -> None:
         self.write_svg('<svg xmlns="http://www.w3.org/2000/svg"><animate attributeName="x"/></svg>')
