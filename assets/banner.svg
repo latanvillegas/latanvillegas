@@ -4,6 +4,7 @@
 <defs>
 <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E9F4FF"/><stop offset=".65" stop-color="#D6EAFB"/><stop offset="1" stop-color="#EDF4FF"/></linearGradient>
 <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#087DA7"/><stop offset=".54" stop-color="#6661C3"/><stop offset="1" stop-color="#078E74"/></linearGradient>
+<linearGradient id="nameTextGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#B71C65"/><stop offset="48%" stop-color="#835AC0"/><stop offset="100%" stop-color="#087E91"/></linearGradient>
 </defs>
 <rect width="1200" height="360" rx="24" fill="url(#background)"/>
 <g stroke="#5281AB" opacity=".12" stroke-width="1"><path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M0 300H1200"/><path d="M60 0V360M120 0V360M180 0V360M240 0V360M300 0V360M360 0V360M420 0V360M480 0V360M540 0V360M600 0V360M660 0V360M720 0V360M780 0V360M840 0V360M900 0V360M960 0V360M1020 0V360M1080 0V360M1140 0V360"/></g>
@@ -11,7 +12,7 @@
 <path d="M0 314Q218 262 403 321T1200 292" stroke="url(#accent)" opacity=".20" stroke-width="3" fill="none"/>
 <rect x="58" y="61" width="6" height="242" rx="3" fill="url(#accent)"/>
 <text x="87" y="104" fill="#078E74" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="17" letter-spacing="3.5">ENGINEERING  /  PORTFOLIO</text>
-<text x="82" y="180" fill="#112643" font-family="Arial,Helvetica,sans-serif" font-size="63" font-weight="700">Latan Villegas</text>
+<text x="82" y="180" fill="url(#nameTextGradient)" font-family="Arial,Helvetica,sans-serif" font-size="63" font-weight="700">Latan Villegas</text>
 <text x="87" y="225" fill="#395974" font-family="Arial,Helvetica,sans-serif" font-size="23">Android · Full-Stack · Automation</text>
 <path d="M87 247H520" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
 <rect x="85" y="271" width="121" height="35" rx="17.5" fill="#C6EAF4" stroke="#7FA6C7" stroke-opacity=".6"/>

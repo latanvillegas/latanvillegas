@@ -136,5 +136,37 @@ class ProfileValidationTests(unittest.TestCase):
         )
 
 
+    def test_admite_nombre_gradiente_estatico(self) -> None:
+        image = self.root / "assets" / "name-gradient.svg"
+        image.write_text(
+            '<svg xmlns="http://www.w3.org/2000/svg">'
+            '<defs><linearGradient id="name"><stop offset="0%" stop-color="#FFB2D0"/>'
+            '<stop offset="100%" stop-color="#70EBEE"/></linearGradient></defs>'
+            '<text fill="url(#name)">Latan Villegas</text></svg>',
+            encoding="utf-8",
+        )
+        self.assertEqual(
+            validate_readme(
+                '<h1><img src="assets/name-gradient.svg" alt="Latan Villegas"></h1>',
+                self.root,
+            ),
+            [],
+        )
+
+    def test_admite_nombre_responsivo_claro_oscuro(self) -> None:
+        for file in ("name-gradient.svg", "name-gradient-dark.svg"):
+            (self.root / "assets" / file).write_text(
+                '<svg xmlns="http://www.w3.org/2000/svg"/>', encoding="utf-8"
+            )
+        content = (
+            '<h1><picture>'
+            '<source media="(prefers-color-scheme: dark)" srcset="assets/name-gradient-dark.svg">'
+            '<source media="(prefers-color-scheme: light)" srcset="assets/name-gradient.svg">'
+            '<img src="assets/name-gradient.svg" alt="Latan Villegas">'
+            '</picture></h1>'
+        )
+        self.assertEqual(validate_readme(content, self.root), [])
+
+
 if __name__ == "__main__":
     unittest.main()
